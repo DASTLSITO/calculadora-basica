@@ -7,34 +7,45 @@
         <link rel="stylesheet" href="normalize.css">
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="icono.png">      
+        <script src="https://kit.fontawesome.com/616b47b852.js" crossorigin="anonymous"></script>
         <title>Calculadora básica</title>
     </head>
     <body>
-        <main class="calculadora">
-            <div class="calculadoraCuerpo">
-                <div class="pantallaCuerpo item">
-                    <input disabled class="pantalla"></input>
+        <div class="grid-container">
+            <header>
+                <div class="contenedor__redesSociales">
+                    <a class="github redesSociales" target="_BLANK" href="https://github.com/DASTLSITO"><i class="fab fa-github"></i></a>
                 </div>
-                <div class="botones item">
-                    <button id="7" class="boton">7</button>
-                    <button id="8" class="boton">8</button>
-                    <button id="9" class="boton">9</button>
-                    <button id="+" class="botonOperacion">+</button>
-                    <button id="4" class="boton">4</button>
-                    <button id="5" class="boton">5</button>
-                    <button id="6" class="boton">6</button>
-                    <button id="-" class="botonOperacion">-</button>
-                    <button id="1" class="boton">1</button>
-                    <button id="2" class="boton">2</button>
-                    <button id="3" class="boton">3</button>
-                    <button id="*" class="botonOperacion">x</button>
-                    <button id="0" class="boton">0</button>
-                    <button id="C" class="botonC">C</button>
-                    <button id="=" class="botonIgual">=</button>
-                    <button id="/" class="botonOperacion">/</button>
+            </header>
+    
+            <main class="calculadora">
+                <div class="calculadoraCuerpo">
+                    <div class="pantallaCuerpo item">
+                        <input disabled class="pantalla"></input>
+                    </div>
+                    <div class="botones item">
+                        <button id="C" class="botonC">C</button>
+                        <button class="borrar"><-</button>
+                        <button id="+" class="botonOperacion">+</button>
+                        <button id="7" class="boton">7</button>
+                        <button id="8" class="boton">8</button>
+                        <button id="9" class="boton">9</button>
+                        <button id="-" class="botonOperacion">-</button>
+                        <button id="4" class="boton">4</button>
+                        <button id="5" class="boton">5</button>
+                        <button id="6" class="boton">6</button>
+                        <button id="*" class="botonOperacion">x</button>
+                        <button id="1" class="boton">1</button>
+                        <button id="2" class="boton">2</button>
+                        <button id="3" class="boton">3</button>
+                        <button id="/" class="botonOperacion">/</button>
+                        <button id="0" class="boton cero">0</button>
+                        <button class="punto">.</button>
+                        <button id="=" class="botonIgual">=</button>
+                    </div>
                 </div>
-            </div>
-        </main>
+            </main>
+        </div>
 
         <script src="script.js"></script>
     </body>
