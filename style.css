@@ -1,0 +1,70 @@
+:root{
+    --fondo: #f1f1f1;
+    --calculadoraFondo: #2C3639;
+    --botonesFondo: #F4EFDA;
+    --botonesFondoHover: #E6E2CB;
+    --fondoCalculadora: #100F0F;
+}
+
+html{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: var(--fondo);
+}
+
+.calculadoraCuerpo{
+    flex-direction: column;
+    background-color: var(--calculadoraFondo);
+    padding: 1.2rem;
+    border-radius: 2rem;
+    height: 510px;
+    max-width: 500px;
+    margin: 1rem;
+}
+
+.calculadora{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pantallaCuerpo{
+    margin-bottom: 1.4rem;
+}
+
+.pantalla{
+    border-radius: 1.2rem;
+    padding: 1.2rem;
+    width: calc(100% - 2.5rem);
+    height: 100;
+    background-color: var(--fondoCalculadora);
+    color: var(--fondo);
+    font-size: 2rem;
+}
+
+.botones{
+    width: 100%;
+    height: 410px;
+    display: inline-grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 10px;
+    font-size: 2.8rem;
+}
+
+.boton, .botonC, .botonIgual, .botonOperacion{
+    width: 100%;
+    background-color: var(--botonesFondo);
+    border-radius: .8rem;
+    cursor: pointer;
+    border: none;
+    transition: background-color .1s ease-in;
+}
+
+.boton:hover, .botonC:hover, .botonIgual:hover, .botonOperacion:hover{
+    background-color: var(--botonesFondoHover);
+}
+
