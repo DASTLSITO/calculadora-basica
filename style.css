@@ -42,7 +42,7 @@ header{
     transition: color 0.08s;
 }
 
-.redesSociales:hover, .p__nombre:hover{
+.redesSociales:hover{
     color: var(--botonesFondoHover);
 }
 
@@ -102,7 +102,11 @@ header{
 }
 
 .boton:hover, .botonC:hover, .botonIgual:hover, .botonOperacion:hover, .borrar:hover, .punto:hover{
-    background-color: var(--botonesFondoHover);
+    box-shadow: inset -1rem -1rem 1.8rem var(--botonesFondoHover);
+}
+
+.boton:active, .botonC:active, .botonIgual:active, .botonOperacion:active, .borrar:active, .punto:active{
+    box-shadow: inset 1rem 1rem 1.8rem var(--botonesFondoHover);
 }
 
 @media screen and (max-width: 980px){
